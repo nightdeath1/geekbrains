@@ -1,382 +1,182 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-.menu {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 18px;
-    padding-bottom: 19px;
-}
-.header {
-    background: #222222;
-}
-.left__menu {
-    align-self: center;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-.right__menu {
-    align-self: center;
-}
+<body>
+    <header>
+    <div class="header">
+    <div class="container menu">
+        <div class="left__menu">
+            <a href="#"><img src="img/img1.svg" alt="logo"></a>
+            <a class="left__img" href="#"><img src="img/img2.svg" alt="search"></a>
+        </div>
+        <div class="right__menu">
+            <a class="right__img" href="#"><img src="img/img3.svg" alt="menu"></a>
+            <a class="right__img" href="#"><img src="img/img4.svg" alt="login"></a>
+            <a class="right__img" href="#"><img src="img/img5.svg" alt="cart"></a>
+        </div>
+    </div>
+    </div>
+    </header>
+    <main>
+    <background>
+    <div class="main">
+        <div class="container introduce">
+            <div class="intro__text">
+                <h3 class="text">THE BRAND <br><span class="text1"> OF LUXERIOUS</span><span class="text2"> FASHION</span></h3>
+            </div>
+        </div>
+    </div>
+    </background>
+    <offer>
+<div class="container">
+    <div class="card__box">
+        <div class="product women"><p class="card__text"> 30% OFF <br><span class="text3"> FOR WOMEN</span></p></div>
+        <div class="product men"><p class="card__text"> HOT DEAL <br><span class="text3"> FOR MEN</span></p></div>
+        <div class="product kids"><p class="card__text"> NEW ARRIVALS <br><span class="text3"> FOR KIDS</span></p></div>
 
-.left__img {
-    padding-left: 41px;
-}
-
-.right__img:not(:first-child) {
-    margin-left: 33px;
-}
-.main {
-    background: #F1E4E6;
-    height: 764px;
-}
-.introduce {
-    display: flex;
-    height: 100%;
-    align-items: center;
-    justify-content: flex-end;
-    background: url('img/Layer_man.png');
-    background-repeat: no-repeat;
-    background-position: -212px bottom;
-}
-
-
-.intro__text {
-    border-left: 12px solid #F16D7F;
-}
-
-.text {
-    font-weight: 900;
-    font-size: 48px;
-    line-height: 58px;
-    color: #222222;
-    padding: 0 0 0 16px;
-
-}
-.text1 {
-    font-size: 32px;
-}
-.text2 {
-    font-size: 32px;
-color: #F16D7F;
-}
-
-
-.container {
-    max-width: 1160px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin: 0 auto;
-}
-
-.card__box {
-    display: flex;
-    justify-content: space-between;
-    align-self: center;
-    height: 260px;
-    margin-top: 65px;
-}
-
-.card__text {
-    padding-top: 105px;
-    font-family: Lato;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 19px;
-text-align: center;
-color: #FFFFFF;
-
-}
-
-.product {
-    width: 360px;
-    height: 260px;
-}
-.women {
-    background-image: url(img/women.png);
-}
-.product {
-    box-shadow: 0 0 0 140px rgb(33 22 22 / 70%) inset;
-}
-
-.men {
-    background-image: url(img/men.png);
-}
-.kids {
-    background-image: url(img/kids.png);
-}
-.accesories {
-    background-image: url(img/accesories.png);
-    height: 180px;
-    width: 100%;
-    margin-top: 30px;
-}
-
-.accs {
-    padding-top: 65px;
-}
-.text3 {
-    font-size: 16px;
-    line-height: 28px;
-    color: #F16D7F;
-    font-size: 24px;
-}
-
-.heading {
-text-align: center;
-margin-top: 96px;
-}
-
-.heading_title {
-font-family: Lato;
-font-style: normal;
-font-weight: normal;
-font-size: 30px;
-line-height: 36px;
-color: #222222;"
-}
-
-
-.heading_text {
-font-family: Lato;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 17px;
-color: #9F9F9F;
-margin-top: 6px;
-}
-
-.product1 {
-    display: flex;
-    flex-direction: column;
-    width: 360px;
-    margin-top: 30px;
-}
-
-
-.product__text__field {
-padding-top: 25px;
-padding-left: 18px;
-padding-bottom: 20px;
-background: #F8F8F8;
-}
-
-.product_head {
-font-family: Lato;
-font-style: normal;
-font-size: 13px;
-line-height: 16px;
-color: #000000;
-}
-
-.product_description {
-padding-top: 13px;
-font-family: Lato;
-font-style: normal;
-font-weight: 300;
-font-size: 14px;
-line-height: 17px;
-color: #5D5D5D;
-
-padding-right: 28.8px;
-}
-
-.product_price {
-    padding-top: 18px;
-    font-family: Lato;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-    color: #F16D7F;
-}
-
-.product_wrapper {
-display: flex;
-justify-content: space-between;
-flex-wrap: wrap;
-}
-
-.topcard {
-    margin-top: 48px;
-}
-
-
-.browse_button {
-    text-align: center;
-    margin-top: 48px;
-}
-
-.browse {
-    border: 1px solid #FF6A6A;
-    padding-top: 14.5px;
-    padding-bottom: 13.5px;
-    padding-left: 38.5px;
-    padding-right: 38.5px;
-    font-size: 16px;
-    line-height: 19px;
-    color: #F26376;
-    background-color: white;
-    margin-bottom: 95.5px;
-}
-.footer {
-    background: #222224;
-}
-.footer_adv {
-    display: flex;  
-    justify-content: space-between;
-    align-items: center;
-}
-.adv_wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 360px;
+    </div>
+    </offer>
+    <product>
+    <div class="heading">
+        <h3 class="heading_title">Featured Items</h3>
+        <p class="heading_text">Shop for items based on what we featured in this week</p>
+    </div>
     
-}
+<div class="product_wrapper">
+        <div class="product1 topcard">
+                <img src="img/man.png" alt="F1">
+            <div class="product__text__field">
+                <h4 class="product_head">ELLERY X M'O CAPSULE</h4>
+                <p class="product_description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <p class="product_price">$52.00</p>
+            </div>
+        </div>
 
-.adv_head {
+    <div class="product1 topcard">
+            <img src="img/woman.png" alt="F1">
+        <div class="product__text__field">
+            <h4 class="product_head">ELLERY X M'O CAPSULE</h4>
+            <p class="product_description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+            <p class="product_price">$52.00</p>
+        </div>
+    </div>
 
-font-size: 19.96px;
-line-height: 24px;
-color: #FBFBFB;
-padding-top: 28px;
-}
+    <div class="product1 topcard">
+            <img src="img/teen.png" alt="F1">
+        <div class="product__text__field">
+            <h4 class="product_head">ELLERY X M'O CAPSULE</h4>
+            <p class="product_description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+            <p class="product_price">$52.00</p>
+        </div>
+    </div>
 
-.adv_text {
+    <div class="product1">
+            <img src="img/beardman.png" alt="F1">
+        <div class="product__text__field">
+            <h4 class="product_head">ELLERY X M'O CAPSULE</h4>
+            <p class="product_description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+            <p class="product_price">$52.00</p>
+        </div>
+    </div>
 
-font-size: 13.972px;
-line-height: 17px;
-text-align: center;
-color: #FBFBFB;
-padding-bottom: 104px;
-padding-top: 16px;
-}
+    <div class="product1">
+            <img src="img/girl.png" alt="F1">
+        <div class="product__text__field">
+            <h4 class="product_head">ELLERY X M'O CAPSULE</h4>
+            <p class="product_description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+            <p class="product_price">$52.00</p>
+        </div>
+    </div>
 
-.adv_img{
-    padding-top: 103px;
-    width: 45px;
-}
+    <div class="product1">
+            <img src="img/girl1.png" alt="F1">
+        <div class="product__text__field">
+            <h4 class="product_head">ELLERY X M'O CAPSULE</h4>
+            <p class="product_description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+            <p class="product_price">$52.00</p>
+        </div>
+    </div>
+</div>
+<div class="browse_button"><button class="browse">Browse All Product</button></div>
 
-.sales {
-    padding-top: 19px;
-}
+</div>
 
-.circle {
-    padding-top: 104px;
-}
+</product>
+<feature>
+<div class="footer">
+    <div class="container">
+    <div class="footer_adv">
+    <div class="adv_wrapper">
+        <img class="adv_img" src="img/truck.svg" alt="truck">
+        <h3 class="adv_head">Free Delivery</h3>
+        <p class="adv_text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+    </div>
+    <div class="adv_wrapper">
+        <img class="adv_img circle" src="img/circle.svg" alt="truck">
+        <h3 class="adv_head sales">Sales & discounts</h3>
+        <p class="adv_text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+    </div>
+    <div class="adv_wrapper">
+        <img class="adv_img" src="img/crown.svg" alt="truck">
+        <h3 class="adv_head crown">Quality assurance</h3>
+        <p class="adv_text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+    </div>
+    </div>
+    </div>
+</div>
+</feature>
+<subscribe>
+<div class="sub_layer">
+<div class="container">
+<div class="sub_wrapper">
+    <div class="sub_left_menu">
+        <img src="img/Intersect.png">
+        <p class="sub_left_text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
+    </div>
+    <div class="sub_right_menu">
+        <h3 class="sub_right_text"><span class="sub_t">SUBSCRIBE</span><br>FOR OUR NEWLETTER AND PROMOTION</h3>
+        <div class="buttons">
+        <input type="email" class="write" name="login" placeholder="Enter Your Mail">
+        <input type="submit" class="button" value="Subscribe">
+        </div>
+    </div>
+</div>  
+</div>
+</div>
+</subscribe>
+</main>
 
-.crown {
-    padding-top: 25px;
-}
+<footer>
+
+ <div class="footer">
+    <div class="container">
+    <div class="footer_adv">
+    <div class="leftbot_text">© 2021  Brand  All Rights Reserved.</div>
+    <div class="rightbot_text">
+        <div class="icon"><a href="#"><img src="img/fb.png"></a></div>
+        <div class="icon"><a href="#"><img src="img/ig.png"></a></div>
+        <div class="icon"><a href="#"><img src="img/pi.png"></a></div>
+        <div class="icon"><a href="#"><img src="img/tw.png"></a></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+</footer>
+</body>
+
+</html>
 
 
 
-.central_footer {
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-}
 
 
 
-
-.leftbot_text {
-font-size: 16px;
-line-height: 19px;
-color: #FBFBFB;
-
-
-}
-
-.rightbot_text {
-    display: flex;
-    align-items: center;
-}
-
-
-.icon {
-    padding-top: 24px;
-    padding-bottom: 23px;
-}
-
-.icon:not(:first-child){
-    margin-left: 7px;
-}
-
-.sub_layer {
-    background: url('img/sub.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-
-.sub_wrapper {
-    display: flex;
-    justify-content: space-between;
-}
-
-.sub_left_menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 87px;
-}
-
-.sub_left_text {
-padding-top: 30px;
-font-size: 20px;
-line-height: 24px;
-text-align: center;
-color: #222224;
-width: 360px;
-}
-
-.sub_right_menu {
-padding-top: 156px;
-padding-bottom: 150px;
-}
-
-.sub_right_text {
-font-weight: 400;
-font-size: 24px;
-line-height: 40px;
-text-align: center;
-color: #222224;
-}
-
-.sub_t {
-font-weight: 700;
-font-size: 24px;
-line-height: 40px;
-text-align: center;
-color: #222224;
-}
-
-.buttons {
-    text-align: center;
-    padding-top: 27px;
-}
-
-.write {
-border-radius: 20px 0 0 20px;
-padding-top: 7px;
-padding-right: 7px;
-padding-bottom: 6px;
-padding-left: 8px;
-}
-.button {
-border-radius: 0 20px 20px 0;
-background: #F16D7F;
-padding-top: 7px;
-padding-right: 7px;
-padding-bottom: 6px;
-padding-left: 8px;
-font-size: 14px;
-line-height: 17px;
-color: #FFFFFF
-}
