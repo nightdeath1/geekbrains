@@ -1,0 +1,154 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+
+
+// 1. Дан код:
+// var a = 1, b = 1, c, d;
+// c = ++a; alert(c);            2 (++ перед переменной - увеличивает на 1 ; 1+1=2)
+// d = b++; alert(d);            1 (++ после пемеренной - увеличивает значение на 1, но выводит предыдущее значение)
+// c = (2+ ++a); alert(c);       5  (2 + (2+1))
+// d = (2+ b++); alert(d);       4 (2+(1+1))
+// alert(a);                     3 (1=>2=>3)
+// alert(b);                     3 ( 1=>2=>3)
+// Почему код даёт именно такие результаты?
+
+
+// 2. var a = 2;
+// var x = 1 + (a *= 2); (1 + (2*2)) = 5 (*= - степень)
+
+
+// 3. Объявить две целочисленные переменные a и b и задать им произвольные начальные значения. Затем написать скрипт, который работает по следующему принципу:
+// если a и b положительные, вывести их разность;
+// если а и b отрицательные, вывести их произведение;
+// если а и b разных знаков, вывести их сумму; ноль можно считать положительным числом.
+
+var a = -5, b = 4;
+if(a >= 0 && b >= 0) {
+    console.log(a-b);
+}
+else if(a < 0 && b < 0) {
+    console.log(a*b);
+}
+else if((a >= 0 && b < 0) || (a < 0 && b >= 0)) {
+    console.log(a+b);
+}
+
+// 4. Присвоить переменной а значение в промежутке [0..15]. С помощью оператора switch организовать вывод чисел от a до 15.
+
+var a = 3;
+switch (a) {
+    case 1:
+        console.log('Ваше число 1');
+        break;
+    case 2:
+        console.log('Ваше число 2');
+        break;
+    case 3:
+        console.log('Ваше число 3');  
+        break;
+    case 4:
+        console.log('Ваше число 4');
+        break;
+    case 5:
+        console.log('Ваше число 5');
+        break;
+    case 6:
+        console.log('Ваше число 6');
+        break;
+    case 7:
+        console.log('Ваше число 7');
+        break;
+    case 8:
+        console.log('Ваше число 8');
+        break;
+    case 9:
+        console.log('Ваше число 9');  
+        break;
+    case 10:
+        console.log('Ваше число 10');
+        break;
+    case 11:
+        console.log('Ваше число 11');
+        break;
+    case 12:
+        console.log('Ваше число 12');
+        break;    
+    case 13:
+        console.log('Ваше число 13');
+        break;
+    case 14:
+        console.log('Ваше число 14');
+        break;
+    case 15:
+        console.log('Ваше число 15');
+        break;
+    default:
+        console.log('Введите число от 1 до 15');
+            
+            }
+
+// 5. Реализовать основные 4 арифметические операции в виде функций с двумя параметрами. Обязательно использовать оператор return.
+
+function sum (a, b) {
+    return a + b;
+}
+console.log(sum(3, 5));
+
+function sub (a, b) {
+    return a - b;
+}
+console.log(sub(5, 3));
+
+function div (a, b) {
+    return a / b;
+}
+console.log(div(6, 2));
+
+function mult (a, b) {
+    return a * b;
+}
+console.log(mult(6, 4));
+
+
+// 6. Реализовать функцию с тремя параметрами: function mathOperation(arg1, arg2, operation), где arg1, arg2 – значения аргументов, operation – строка с названием операции. В зависимости от переданного значения операции выполнить одну из арифметических операций (использовать функции из пункта 5) и вернуть полученное значение (использовать switch).
+
+function mathOperation(arg1, arg2, operation) {
+    switch (operation) {
+        case sum:
+            return arg1 + arg2;
+        case sub:
+            return arg1 - arg2;
+        case div:
+            return arg1 / arg2;
+        case mult:
+            return arg1 * arg2;            
+    }
+}
+
+console.log(mathOperation(3, 5, sum));
+
+// 8. *С помощью рекурсии организовать функцию возведения числа в степень. Формат: function power(val, pow), где val – заданное число, pow – степень.
+
+
+function power(val, pow) {
+    if (pow == 1) {
+        return val;
+}
+    else if (pow == 0) {
+    return 1;
+}
+    else if (pow > 0){
+    return val * power(val, pow - 1);
+}
+    else if(pow < 0){
+    return 1 / (val * power(val, -pow - 1));
+}
+}
+
+alert(power(2, -3));
+
+</script>
+
+
+
