@@ -36,55 +36,39 @@ else if((a >= 0 && b < 0) || (a < 0 && b >= 0)) {
 
 // 4. Присвоить переменной а значение в промежутке [0..15]. С помощью оператора switch организовать вывод чисел от a до 15.
 
-var a = 3;
+var a = +prompt('Введите число от 0 до 15');
 switch (a) {
     case 1:
-        console.log('Ваше число 1');
-        break;
+        console.log(a++);
     case 2:
-        console.log('Ваше число 2');
-        break;
+        console.log(a++);
     case 3:
-        console.log('Ваше число 3');  
-        break;
+        console.log(a++);
     case 4:
-        console.log('Ваше число 4');
-        break;
+        console.log(a++);
     case 5:
-        console.log('Ваше число 5');
-        break;
+        console.log(a++);
     case 6:
-        console.log('Ваше число 6');
-        break;
+        console.log(a++);
     case 7:
-        console.log('Ваше число 7');
-        break;
+        console.log(a++);
     case 8:
-        console.log('Ваше число 8');
-        break;
+        console.log(a++);
     case 9:
-        console.log('Ваше число 9');  
-        break;
+        console.log(a++);
     case 10:
-        console.log('Ваше число 10');
-        break;
+        console.log(a++);
     case 11:
-        console.log('Ваше число 11');
-        break;
+        console.log(a++);
     case 12:
-        console.log('Ваше число 12');
-        break;    
+        console.log(a++);  
     case 13:
-        console.log('Ваше число 13');
-        break;
+        console.log(a++);
     case 14:
-        console.log('Ваше число 14');
-        break;
+        console.log(a++);
     case 15:
-        console.log('Ваше число 15');
-        break;
-    default:
-        console.log('Введите число от 1 до 15');
+        console.log(a++);
+
             
             }
 
@@ -116,17 +100,17 @@ console.log(mult(6, 4));
 function mathOperation(arg1, arg2, operation) {
     switch (operation) {
         case sum:
-            return arg1 + arg2;
+            return sum(arg1, arg2);
         case sub:
-            return arg1 - arg2;
+            return sub(arg1, arg2);
         case div:
-            return arg1 / arg2;
+            return div(arg1, arg2);
         case mult:
-            return arg1 * arg2;            
+            return mult(arg1, arg2);            
     }
 }
 
-console.log(mathOperation(3, 5, sum));
+console.log(mathOperation(3, 5, sub));
 
 // 8. *С помощью рекурсии организовать функцию возведения числа в степень. Формат: function power(val, pow), где val – заданное число, pow – степень.
 
